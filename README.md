@@ -8,6 +8,9 @@ The program is written with the increment protected by a mutex, so it passes. To
 observe the race condition the protection has to be removed — see
 [Observing the race](#observing-the-race) below.
 
+A second part then tests whether a self-written helper function is reentrant, and
+shows the fix — see [Part 2](#part-2-reentrancy-test).
+
 ## How it works
 
 ### Shared data
