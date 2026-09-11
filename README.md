@@ -79,7 +79,7 @@ between one thread's load and its store.
 ## Build
 
 ```bash
-gcc -Wall -Wextra -O0 -o counter counter.c -pthread
+gcc -Wall -Wextra -O0 -o counter race_mutex.c -pthread
 ```
 
 `-pthread` is needed at both compile and link time. It defines `_REENTRANT` and
